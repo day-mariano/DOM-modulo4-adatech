@@ -1,0 +1,33 @@
+:root{
+  --cor1-light: #000000;
+  --cor2-light: #ffffff;
+
+  --cor1-dark: #ffffff;
+  --cor2-dark: rgb(53, 52, 53);
+}
+
+:root{
+  --cor1-light: #27253e;
+  --cor2-light: #eef3f9;
+
+  --cor1-dark: #b9c8dc;
+  --cor2-dark: #27253e;
+
+  .light{
+    --color1: var( --cor1-light);
+    --color2:var( --cor2-light);
+  }
+  .dark{
+    --color1: var( --cor1-dark);
+    --color2:var( --cor2-dark);
+  }
+}
+
+body{
+  background-color: var(--color2);
+  color: var(--color1);
+}
+
+.destaque{
+  border: 2px solid green;
+}
