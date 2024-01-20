@@ -9,6 +9,12 @@
         body {
             background-color: #f2f2f2;
             font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1{
+            color: rgb(79, 94, 121);
         }
         .list-container {
             max-width: 400px;
@@ -18,16 +24,33 @@
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+        .button {
+            padding: 8px;
+            margin: 1rem;
+            color: white;
+            border-radius: 4px;
+        }
+        .button:hover {
+            filter: saturate(200%);
+        }
+        #addButton {
+            background: rgb(101, 192, 167);
+        }
+        #removeButton {
+            background: rgb(236, 143, 143);
+        }
     </style>
 </head>
 <body>
+    <h1>Lista de Tarefas</h1>
     <div class="list-container" id="listContainer">
         <!-- Lista será gerada dinamicamente aqui -->
 
     </div>
-
-    <a id="addButton">add</a>
-    <a id="removeButton">remove</a>
+<div class="buttonWrapper">
+    <a id="addButton" class="button">Adicionar</a>
+    <a id="removeButton" class="button">Remover</a>
+</div>
 
     <script src="index.js"></script>
 </body>
